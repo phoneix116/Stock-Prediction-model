@@ -79,7 +79,7 @@ Predicted Stock Price: 125.47
 - 🐍 **Python**  
 - 🤖 **TensorFlow/Keras**  
 - 📊 **NumPy & Pandas**  
-- 📉 **Matplotlib & Seaborn**  
+- 📉 **Matplotlib & Plotly**  
 
 ---
 
