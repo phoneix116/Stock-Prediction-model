@@ -56,7 +56,7 @@ Ensure `X_train` and `y_train` are preprocessed.
 
 ### Train the model:  
 ```python
-model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_val, y_val))
+model.fit(X_train, y_train, epochs=50, batch_size=6, validation_data=(X_val, y_val))
 ```
 
 ### Make predictions:  
