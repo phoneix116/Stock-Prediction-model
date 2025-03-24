@@ -1,111 +1,107 @@
-📈 Stock Prediction Model using TensorFlow
-A deep learning model built using TensorFlow and Keras to predict stock prices based on historical data. The model takes 6 feature inputs and uses LSTM and Dense layers to make predictions.
+# 📈 Stock Prediction Model using TensorFlow
 
-🚀 Features
-📊 Uses deep learning (LSTM & Dense layers) for stock price prediction
+A deep learning model built using **TensorFlow and Keras** to predict stock prices based on historical data. The model takes **6 feature inputs** and uses **Dense layers** to make predictions.
 
-🔢 Trained on 6 input features to analyze market trends
+---
 
-🎯 Optimized with Mean Squared Error (MSE) loss function
+## 🚀 Features  
+- 📊 Uses deep learning (**Dense layers**) for stock price prediction  
+- 🔢 Trained on **6 input features** to analyze market trends  
+- 🎯 Optimized with **Mean Squared Error (MSE) loss function**  
+- 📈 Generates **real-time predictions** for stock movements  
 
-📈 Generates real-time predictions for stock movements
+---
 
-📦 Installation
-Clone the repository:
+## 📦 Installation  
 
-bash
-Copy
-Edit
+### Clone the repository:  
+```bash
 git clone https://github.com/your-username/stock-prediction-tensorflow.git
 cd stock-prediction-tensorflow
-Install dependencies:
+```
 
-bash
-Copy
-Edit
+### Install dependencies:  
+```bash
 pip install -r requirements.txt
-Run the training script:
+```
 
-bash
-Copy
-Edit
+### Run the training script:  
+```bash
 python train.py
-🔧 Model Architecture
-python
-Copy
-Edit
+```
+
+---
+
+## 🔧 Model Architecture  
+
+```python
 model = keras.Sequential([
-    keras.layers.Input(shape=(X_train.shape[1], )),  # 6 features
-    keras.layers.Dense(64, activation='relu'),  
-    keras.layers.Dropout(0.2),
-    
-    keras.layers.Dense(32, activation='relu'),  
-    keras.layers.Dropout(0.2),
-    
-    keras.layers.Dense(16, activation='relu'),  
-    keras.layers.Dense(1, activation='linear')  # Output layer
+    keras.layers.Input(shape=(X_train.shape[1],)),
+    keras.layers.Dense(120, activation='relu'),
+    keras.layers.Dense(60, activation='relu'),
+    keras.layers.Dense(10, activation='relu'),
+    keras.layers.Dense(1, activation='linear')  # Output is probability of price going UP
 ])
-Optimizer: Adam (learning rate = 0.001)
+```
 
-Loss Function: Mean Squared Error (MSE)
+- **Loss Function:** Mean Squared Error (MSE)  
+- **Metrics:** Mean Absolute Error (MAE)  
 
-Metrics: Mean Absolute Error (MAE)
+---
 
-📊 Usage
-Prepare your dataset (Ensure X_train and y_train are preprocessed)
+## 📊 Usage  
 
-Train the model:
+### Prepare your dataset:  
+Ensure `X_train` and `y_train` are preprocessed.  
 
-python
-Copy
-Edit
+### Train the model:  
+```python
 model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_val, y_val))
-Make predictions:
+```
 
-python
-Copy
-Edit
+### Make predictions:  
+```python
 predictions = model.predict(X_test)
 print(predictions)
-📈 Example Prediction
-Example output from the model:
+```
 
-bash
-Copy
-Edit
+---
+
+## 📈 Example Prediction  
+Example output from the model:  
+```bash
 Predicted Stock Price: 125.47
-🛠 Technologies Used
-🐍 Python
+```
 
-🤖 TensorFlow/Keras
+---
 
-📊 NumPy & Pandas
+## 🛠 Technologies Used  
+- 🐍 **Python**  
+- 🤖 **TensorFlow/Keras**  
+- 📊 **NumPy & Pandas**  
+- 📉 **Matplotlib & Seaborn**  
 
-📉 Matplotlib & Seaborn
+---
 
-🏗 Contributing
-Pull requests are welcome! To contribute:
+## 🏗 Contributing  
+Pull requests are welcome! To contribute:  
 
-Fork the repo
+1. **Fork the repo**  
+2. **Create a new branch:**  
+   ```bash
+   git checkout -b feature-name
+   ```
+3. **Commit your changes:**  
+   ```bash
+   git commit -m "Added feature XYZ"
+   ```
+4. **Push to GitHub and open a PR:**  
+   ```bash
+   git push origin feature-name
+   ```
 
-Create a new branch:
+---
 
-bash
-Copy
-Edit
-git checkout -b feature-name
-Commit your changes:
-
-bash
-Copy
-Edit
-git commit -m "Added feature XYZ"
-Push to GitHub and open a PR:
-
-bash
-Copy
-Edit
-git push origin feature-name
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📜 License  
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
