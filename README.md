@@ -37,9 +37,10 @@ python train.py
 ```python
 model = keras.Sequential([
     keras.layers.Input(shape=(X_train.shape[1],)),
-    keras.layers.Dense(120, activation='relu'),
-    keras.layers.Dense(60, activation='relu'),
-    keras.layers.Dense(10, activation='relu'),
+    keras.layers.Dense(128, activation='relu'),
+    keras.layers.Dense(64, activation='relu'),
+    keras.layers.Dense(32, activation='relu'),
+    keras.layers.Dense(16, activation='relu'),
     keras.layers.Dense(1, activation='linear')  # Output is probability of price going UP
 ])
 ```
@@ -56,7 +57,7 @@ Ensure `X_train` and `y_train` are preprocessed.
 
 ### Train the model:  
 ```python
-model.fit(X_train, y_train, epochs=75, batch_size=9, validation_data=(X_val, y_val))
+model.fit(X_train, y_train, epochs=75, batch_size=16, validation_data=(X_val, y_val))
 ```
 
 ### Make predictions:  
