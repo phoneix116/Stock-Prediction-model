@@ -1,7 +1,3 @@
-Here's an enhanced and more detailed `README.md` file with better formatting, more emojis, and additional clarity! 🚀  
-
----
-
 # 📈 Stock Price Prediction Using TensorFlow  
 
 🔮 **A deep learning model built with TensorFlow to predict short-term stock prices.** This project uses historical stock price data and applies machine learning techniques to forecast future stock movements.  
@@ -150,5 +146,3 @@ git push origin feature-xyz
 If you found this project useful, please **⭐ Star** the repository! 😊  
 
 ---
-
-This version provides more details while maintaining readability. Let me know if you want **further customization!** 🚀
