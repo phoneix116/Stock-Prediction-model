@@ -1,12 +1,12 @@
 # 📈 Stock Prediction Model using TensorFlow
 
-A deep learning model built using **TensorFlow and Keras** to predict stock prices based on historical data. The model takes **6 feature inputs** and uses **Dense layers** to make predictions.
+A deep learning model built using **TensorFlow and Keras** to predict stock prices based on historical data. The model takes **4 feature inputs** and uses **Dense layers** to make predictions.
 
 ---
 
 ## 🚀 Features  
 - 📊 Uses deep learning (**Dense layers**) for stock price prediction  
-- 🔢 Trained on **6 input features** to analyze market trends  
+- 🔢 Trained on **4 input features** to analyze market trends  
 - 🎯 Optimized with **Mean Squared Error (MSE) loss function**  
 - 📈 Generates **real-time predictions** for stock movements  
 
