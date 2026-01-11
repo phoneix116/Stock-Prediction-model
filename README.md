@@ -23,7 +23,7 @@ To get started, follow these steps:
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/stock-price-prediction.git
+git clone https://github.com/phoneix116/stock-price-prediction.git
 cd stock-price-prediction
 ```
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ### 3️⃣ Run the Model  
 To train the model and make predictions, execute:  
 ```bash
-python stock_prediction_model_using_tensorflow.py
+open the jupyter notebook
 ```
 
 ---
