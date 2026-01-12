@@ -110,7 +110,7 @@ The best configuration is selected dynamically based on **validation performance
 
 📌 To run the tuning process separately, execute:  
 ```bash
-python hyperparameter_tuning.py
+This process is integrated into the Jupyter Notebook
 ```
 
 ---
