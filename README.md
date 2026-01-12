@@ -89,8 +89,9 @@ Once trained, the model predicts **next-day closing prices** based on historical
 
 📉 **Predicted vs Actual Stock Prices:**  
 
-![Stock Prediction Graph](prediction_graph.png)  
+![prediction_graph png](https://github.com/user-attachments/assets/eefe72a8-b6de-474b-ba47-3a70b7729631)
 
+ 
 The model provides reasonable accuracy for **short-term forecasting**. Further improvements can be made by experimenting with:  
 - More advanced neural network architectures (LSTM, GRU)  
 - Larger datasets with different stocks  
